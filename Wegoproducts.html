@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Wegofin</title>
+    <style>
+        /* Import Lexend font from Google Fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Lexend&display=swap');
+
+        body {
+            font-family: 'Lexend', sans-serif; /* Apply Lexend font to body */
+            position: relative; /* Relative positioning for the container */
+            overflow: hidden; /* Prevent overflow of video */
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        img {
+            width: 300px; /* Adjust the width as needed */
+            height: auto;
+        }
+
+        .links-container {
+            position: relative; /* Positioning for containing elements */
+            background-color: rgba(68, 68, 68, 0.8); /* Slightly transparent background */
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            margin-bottom: 20px;
+            z-index: 2; /* Ensure content is above video */
+        }
+
+        video.background-video {
+            position: absolute; /* Positioning for the background video */
+            top: 2; /* Set top to 0 for full coverage */
+            left: 0;
+            width: 100%;
+            height: 50%; /* Cover the entire background */
+            object-fit: cover; /* Cover the entire container */
+            z-index: 1; /* Place video behind content */
+            opacity: 0.7; /* Set opacity for visibility */
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 10px;
+            width: 200px;
+            display: inline-block;
+            background-color: #3a3a3a; /* Background color of small rectangles */
+            border-radius: 5px; /* Rounded corners for small rectangles */
+        }
+
+        a {
+            text-decoration: none;
+            color: white; /* Text color of links */
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+
+        .circle {
+            position: fixed; /* Use fixed positioning */
+            bottom: 20px; /* Distance from the bottom */
+            left: 20px; /* Distance from the left */
+            width: 150px;
+            height: 150px;
+            border-radius: 75%; /* Circle shape */
+            background-color: #3b3b3b;
+            text-align: center;
+            line-height: 150px;
+            cursor: pointer;
+            z-index: 2; /* Ensure the circle is above other content */
+        }
+
+        /* Styles for the rectangles in the bottom right corner */
+        .rectangles-container {
+            position: fixed; /* Fixed positioning */
+            bottom: 20px; /* Distance from the bottom */
+            right: 20px; /* Distance from the right */
+            z-index: 2; /* Ensure above other content */
+        }
+
+        .rectangle {
+            background-color: #3a3a3a; /* Background color */
+            color: white; /* Text color */
+            padding: 15px; /* Padding for rectangle */
+            margin-bottom: 10px; /* Space between rectangles */
+            border-radius: 5px; /* Rounded corners */
+            width: 150px; /* Width of rectangles */
+            text-align: center; /* Center text */
+        }
+    
+        p {
+            font-family: 'Lexend', sans-serif; /* Apply Lexend font to paragraphs */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="wegofin white logo.png" alt="Wegofin Logo">
+    </header>
+
+    <!-- Background Video -->
+    <video class="background-video" autoplay loop muted>
+        <source src="Wego_ai_2160X3840_02.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Container for links with background rectangle -->
+    <div class="links-container">
+        <ul>
+            <li><a href="Wegox produtc.html">Wego X</a></li>
+            <li><a href="page2.html">Acquire X</a></li>
+            <li><a href="page3.html">Issuer X</a></li>
+            <li><a href="page4.html">Disburse X</a></li>
+            <li><a href="page5.html">Fin X</a></li>
+        </ul>
+    </div>
+
+    <!-- Container for rectangles in bottom right corner -->
+    <div class="rectangles-container">
+        <a href="page6.html" class="rectangle"> Call Script</a>  
+        <a href="page7.html" class="rectangle"> Email Tamplets</a>  
+        <a href="page8.html" class="rectangle"> Chat Tamplets</a>
+    </div>
+
+    <div class="circle">
+        <a href="contact.html">Issuer bank list</a>
+    </div>
+</body>
+</html>
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Styled Web Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: black;
+        }
+
+        h1 {
+            color: rgb(232, 234, 232);
+        }
+    </style>
+</head>
+</html>
+

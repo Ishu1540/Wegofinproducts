@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Issuer Bank List</title>
+</head>
+<body>
+    <h1>Issuer Bank List</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Column 1</th>
+                <th>Column 2</th>
+                <th>Column 3</th>
+                </tr>
+        </thead>
+        <tbody id="myTableBody"></tbody>
+    </table>
+    <script>
+        
+       function populateTable(csvData) {
+    const rows = csvData.split('\n');
+    const headers = rows[0].split(',');
+    const tbody = document.getElementById('myTableBody');
+
+    for (let i = 1; i < rows.length; i++) {
+        const rowData = rows[i].split(',');
+        const row = document.createElement('tr');
+        for (let j = 0; j < headers.length; j++) {
+            const cell = document.createElement('td');
+            cell.textContent = rowData[j];
+            row.appendChild(cell);
+        }
+        tbody.appendChild(row);
+    }
+}
+
+// Load the CSV data and populate the table
+fetch("C:\Users\Ishud\Book1.csv")
+    .then(response => response.text())
+    .then(data => populateTable(data))
+    .catch(error => console.error('Error loading data:', error));
+
+    </script>
+</body>
+</html>
+
